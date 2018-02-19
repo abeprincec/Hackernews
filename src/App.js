@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react';
+import './App.css';
 
-const DEFAULT_QUERY = "redux";
+const DEFAULT_QUERY = 'redux';
 
-const PATH_BASE = "https://hn.algolia.com/api/v1";
+const PATH_BASE = 'https://hn.algolia.com/api/v1';
 
-const PATH_SEARCH = "/search";
-const PARAM_SEARCH = "query=";
+const PATH_SEARCH = '/search';
+const PARAM_SEARCH = 'query=';
 
 const url = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${DEFAULT_QUERY}`;
 
 const largeColumn = {
-  width: "40%"
+  width: '40%'
 };
 const midColumn = {
-  width: "30%"
+  width: '30%'
 };
 const smallColumn = {
-  width: "10%"
+  width: '10%'
 };
 const smallPadding = {
-  padding: "4px"
+  padding: '4px'
 };
 
 class App extends Component {
@@ -128,7 +128,7 @@ const Table = ({ list, onDismiss }) => (
 
 class Button extends Component {
   render() {
-    const { onClick, children, className = "" } = this.props;
+    const { onClick, children, className = '' } = this.props;
     return (
       <button onClick={onClick} className={className} type="button">
         {children}
